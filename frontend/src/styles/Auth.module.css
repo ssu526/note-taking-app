@@ -1,0 +1,120 @@
+* {
+  box-sizing: content-box;
+}
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(187, 186, 186);
+  background-color: rgb(240, 191, 100);
+}
+
+img {
+  height: 500px;
+  width: 500px;
+}
+
+.auth-form-container {
+  height: 500px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.auth-form-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+form input {
+  width: 100%;
+  font-size: 16px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+form button {
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: rgb(146, 96, 3);
+  color: white;
+  font-weight: bold;
+}
+
+.tips {
+  color: rgb(88, 88, 88);
+}
+
+.tips a {
+  text-decoration: none;
+  color: rgb(88, 88, 88);
+}
+
+.tips a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+.error {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+  color: red;
+  height: 20px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+@media (max-width: 800px) {
+  .auth-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  .auth-container {
+    flex-direction: column;
+  }
+
+  img {
+    height: 400px;
+    width: 400px;
+  }
+}

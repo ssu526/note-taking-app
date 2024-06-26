@@ -1,0 +1,60 @@
+/* Node and Edge */
+.topic-node {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+.node-container {
+  display: flex;
+}
+
+.drag-handle {
+  width: 15px;
+  background-image: radial-gradient(
+    circle,
+    rgb(179, 175, 175) 1px,
+    transparent 1px
+  );
+  background-size: 5px 5px;
+  background-position: 0 0, 0 5px;
+}
+
+.node-container input {
+  border: 1px solid #eee;
+  padding: 5px;
+  background: white;
+  border: none;
+  outline: none;
+}
+
+.root-node input {
+  background-color: rgb(223, 220, 220);
+}
+
+.node-container .btn-note {
+  color: gray;
+  cursor: pointer;
+  padding: 3px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.node-container .btn-note:hover {
+  font-weight: bold;
+  color: rgb(40, 40, 204);
+}
+
+.topic-node:hover .drag-handle {
+  display: block;
+}
+
+/* Handler */
+.handler {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: rgb(201, 199, 199);
+}

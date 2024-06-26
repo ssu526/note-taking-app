@@ -1,0 +1,88 @@
+.container {
+  height: 100vh;
+  background-color: rgb(248, 246, 243);
+}
+
+.wrapper {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.user-name-container {
+  border-bottom: 1px solid rgb(211, 209, 206);
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn-logout {
+  padding: 5px;
+  background-color: transparent;
+  border: 1px solid rgb(211, 209, 206);
+  border-radius: 5px;
+}
+
+.btn-logout:hover {
+  background-color: rgb(211, 209, 206);
+}
+
+.btn-add-topic {
+  width: 100%;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid rgb(211, 209, 206);
+  text-align: center;
+  margin-bottom: 30px;
+  background-color: transparent;
+}
+
+.btn-add-topic:hover {
+  background-color: rgb(211, 209, 206);
+}
+
+/* Topic container */
+.topic-container {
+  margin-bottom: 10px;
+  cursor: default;
+  padding: 5px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.topic-container:hover {
+  border: 1px solid rgb(173, 171, 171);
+}
+
+.topic-name-container {
+  width: 100%;
+}
+
+.selected-topic {
+  background-color: rgb(173, 171, 171);
+}
+
+.topic-edit-container {
+  display: none;
+}
+
+.topic-edit-container span {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.topic-container:hover .topic-edit-container {
+  display: flex;
+}
+
+.spinner {
+  margin: 0 auto;
+}
